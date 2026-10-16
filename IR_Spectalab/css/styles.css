@@ -1,0 +1,392 @@
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --tinta: #19254b;
+  --morado: #7857ff;
+  --lila: #f0eaff;
+  --borde: #e8e4f4;
+  --fondo: #f8f7fc;
+  --verde: #1aa88b;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, "Segoe UI", Arial, sans-serif;
+  background: var(--fondo);
+  color: var(--tinta);
+}
+
+button, input {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+.sidebar {
+  position: fixed;
+  inset: 0 auto 0 0;
+  width: 242px;
+  background: white;
+  border-right: 1px solid var(--borde);
+  padding: 25px 15px;
+  display: flex;
+  flex-direction: column;
+  z-index: 2;
+}
+
+.logo {
+  color: var(--tinta);
+  font-size: 21px;
+  font-weight: 800;
+  text-decoration: none;
+  margin-bottom: 55px;
+}
+
+.logo span {
+  color: var(--morado);
+}
+
+.menu-label, .etiqueta {
+  font-size: 11px;
+  letter-spacing: 1.5px;
+  color: var(--morado);
+  font-weight: 700;
+}
+
+.menu-label {
+  color: #9994b1;
+  margin-bottom: 20px;
+}
+
+.menu-item {
+  border: 0;
+  background: transparent;
+  text-align: left;
+  padding: 14px 12px;
+  border-radius: 13px;
+  color: #5f6080;
+  margin-bottom: 9px;
+}
+
+.menu-item:hover, .menu-item.activo {
+  background: var(--lila);
+  color: var(--morado);
+}
+
+.sidebar-info {
+  margin-top: auto;
+  padding: 20px 16px;
+  border-radius: 17px;
+  background: linear-gradient(135deg, #f0eaff, #ffeaf7);
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+.sidebar-info p {
+  color: #79758e;
+  margin-bottom: 0;
+}
+
+.contenido {
+  margin-left: 242px;
+  padding: 28px 38px;
+  max-width: 1800px;
+}
+
+.barra-superior {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  font-size: 12px;
+  color: #85829c;
+  margin-bottom: 28px;
+}
+
+.barra-superior span:last-child {
+  color: var(--verde);
+}
+
+.portada {
+  min-height: 350px;
+  border-radius: 27px;
+  padding: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 25px;
+  background: linear-gradient(115deg, #eee7ff, #fbe9fa 70%, #fff0e7);
+}
+
+.portada-texto {
+  max-width: 650px;
+}
+
+.portada h1 {
+  font-size: clamp(32px, 3.4vw, 47px);
+  line-height: 1.15;
+  margin: 22px 0;
+  letter-spacing: -1.4px;
+}
+
+.portada-texto > p:not(.etiqueta) {
+  color: #77718f;
+  line-height: 1.8;
+}
+
+#busqueda {
+  width: 100%;
+  max-width: 520px;
+  border: 1px solid #e2dcf8;
+  background: white;
+  padding: 16px;
+  border-radius: 13px;
+  margin-top: 12px;
+  outline-color: var(--morado);
+}
+
+.circulo-ir {
+  flex: 0 0 190px;
+  width: 190px;
+  height: 190px;
+  border-radius: 50%;
+  background: radial-gradient(circle, #fff9ff, #f8e8ff);
+  border: 1px solid white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.circulo-ir strong {
+  display: grid;
+  place-items: center;
+  width: 115px;
+  height: 115px;
+  color: white;
+  font-size: 36px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #8b6bff, #d579d5);
+}
+
+.circulo-ir span {
+  position: absolute;
+  padding: 9px;
+  border-radius: 9px;
+  background: white;
+  color: var(--morado);
+  font-size: 11px;
+}
+
+.circulo-ir span:first-child {
+  top: 20px;
+  left: 0;
+}
+
+.circulo-ir span:last-child {
+  right: 0;
+  bottom: 45px;
+}
+
+.estadisticas {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+  margin: 24px 0 45px;
+}
+
+.estadistica, .tarjeta-grupo, .tarjeta-molecula, .panel-detalle {
+  background: white;
+  border: 1px solid var(--borde);
+  border-radius: 17px;
+}
+
+.estadistica {
+  padding: 20px;
+}
+
+.estadistica p, .estadistica small {
+  color: #85809d;
+  font-size: 12px;
+}
+
+.estadistica strong {
+  display: block;
+  font-size: 30px;
+  margin: 12px 0 6px;
+}
+
+.seccion {
+  margin: 30px 0;
+}
+
+.titulo-fila {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+h2 {
+  font-size: 24px;
+  margin: 12px 0;
+}
+
+.subtitulo {
+  color: #817c98;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.contador {
+  color: var(--morado);
+  background: var(--lila);
+  padding: 10px 13px;
+  border-radius: 10px;
+  font-size: 12px;
+}
+
+.rejilla-grupos, .rejilla-moleculas {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  gap: 16px;
+  margin-top: 25px;
+}
+
+.tarjeta-grupo, .tarjeta-molecula {
+  padding: 21px;
+  text-align: left;
+  color: var(--tinta);
+  transition: transform .15s, border-color .15s;
+}
+
+.tarjeta-grupo:hover, .tarjeta-molecula:hover {
+  transform: translateY(-3px);
+  border-color: #b9aaff;
+}
+
+.icono-grupo {
+  display: grid;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 13px;
+  background: #e8f8ff;
+  font-size: 22px;
+  margin-bottom: 17px;
+}
+
+.tarjeta-grupo h3, .tarjeta-molecula h3 {
+  margin: 0 0 10px;
+  font-size: 17px;
+}
+
+.tarjeta-grupo p, .tarjeta-molecula p {
+  color: #817c98;
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+.tarjeta-grupo small {
+  color: var(--morado);
+}
+
+.boton-volver {
+  background: white;
+  border: 1px solid var(--borde);
+  border-radius: 9px;
+  padding: 11px 14px;
+  color: var(--morado);
+  margin-bottom: 22px;
+}
+
+.oculto {
+  display: none !important;
+}
+
+.panel-detalle {
+  padding: 26px;
+  margin-top: 22px;
+}
+
+.datos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 12px;
+  margin: 20px 0;
+}
+
+.dato {
+  background: #f8f7fc;
+  border-radius: 10px;
+  padding: 14px;
+  overflow-wrap: anywhere;
+}
+
+.dato small {
+  display: block;
+  color: #817c98;
+  margin-bottom: 7px;
+}
+
+.fuente {
+  color: var(--morado);
+  overflow-wrap: anywhere;
+}
+
+.aviso {
+  padding: 14px;
+  background: #fff8e8;
+  border-radius: 10px;
+  color: #775b18;
+  line-height: 1.6;
+  font-size: 13px;
+}
+
+footer {
+  text-align: center;
+  padding: 35px 10px;
+  color: #9994ad;
+  font-size: 12px;
+}
+
+@media (max-width: 800px) {
+  .sidebar {
+    position: static;
+    width: 100%;
+    padding: 18px;
+  }
+
+  .logo {
+    margin-bottom: 20px;
+  }
+
+  .menu-label, .sidebar-info {
+    display: none;
+  }
+
+  .menu-item {
+    margin: 2px;
+  }
+
+  .contenido {
+    margin-left: 0;
+    padding: 20px;
+  }
+
+  .portada {
+    padding: 25px;
+  }
+
+  .circulo-ir {
+    display: none;
+  }
+
+  .estadisticas {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,282 @@
+
+[
+  {
+    "id": 1,
+    "nombre": "Etanol",
+    "formula": "C2H6O",
+    "cas": "64-17-5",
+    "grupo": "Alcohol",
+    "espectroImagen": "data/espectros/etanol-sdbs-1300.png",
+"fuenteEspectro": "AIST SDBS, registro 1300",
+    "enlace": "O-H",
+    "banda": "3200-3600 cm-1",
+    "descripcion": "Presenta una banda O-H generalmente ancha."
+  },
+  {
+    "id": 2,
+    "nombre": "Acetona",
+    "formula": "C3H6O",
+    "cas": "67-64-1",
+    "grupo": "Cetona",
+    "enlace": "C=O",
+    "banda": "Aproximadamente 1715 cm-1",
+    "descripcion": "Presenta una banda intensa característica del carbonilo."
+  },
+  {
+    "id": 3,
+    "nombre": "Ácido acético",
+    "formula": "C2H4O2",
+    "cas": "64-19-7",
+    "grupo": "Ácido carboxílico",
+    "enlace": "C=O y O-H",
+    "banda": "C=O cerca de 1710 cm-1",
+    "descripcion": "Presenta carbonilo y una banda O-H muy ancha."
+  },
+  
+{
+  "id": 4,
+  "nombre": "Acetato de etilo",
+  "nombreIUPAC": "Etanoato de etilo",
+  "formula": "C4H8O2",
+  "masaMolar": "88.1051 g/mol",
+  "cas": "141-78-6",
+  "grupo": "Éster",
+  "enlace": "C=O y C-O",
+  "banda": "Consultar el espectro original",
+
+"descripcion": "Éster alifático. Espectro IR de referencia de película líquida.",
+"fuenteEspectral": {
+  "nombre": "AIST SDBS",
+  "numeroSDBS": "889",
+  "tipoEspectro": "IR",
+  "fase": "Película líquida",
+  "url": "https://sdbs.db.aist.go.jp/IrSpectralView.aspx?fname=NIDA1804&sdbsno=889"
+},"espectroImagen": "data/espectros/acetato-etilo-sdbs-889.png",
+"fuenteEspectro": "AIST SDBS, registro 889",
+"verificado": true
+
+},
+  {
+    "id": 5,
+    "nombre": "Benceno",
+    "formula": "C6H6",
+    "cas": "71-43-2",
+    "grupo": "Aromático",
+    "enlace": "C=C",
+    "banda": "1450-1600 cm-1",
+    "descripcion": "Presenta bandas asociadas a las vibraciones del anillo aromático."
+  },
+  {
+    "id": 6,
+    "nombre": "Acetonitrilo",
+    "formula": "C2H3N",
+    "cas": "75-05-8",
+    "grupo": "Nitrilo",
+    "enlace": "C≡N",
+    "banda": "2210-2260 cm-1",
+    "descripcion": "Presenta una banda característica del enlace triple nitrilo."
+  },
+  
+  {
+    "id": 7,
+    "nombre": "Metanol",
+    "formula": "CH4O",
+    "cas": "67-56-1",
+    "grupo": "Alcohol",
+    "espectroImagen": "data/espectros/metanol-sdbs-3302.png",
+    "enlace": "O-H y C-O",
+    "banda": "O-H: 3200-3600 cm-1; C-O: 1000-1100 cm-1",
+    "descripcion": "Alcohol primario de un solo carbono, con banda O-H."
+  },
+  {
+    "id": 8,
+    "nombre": "1-Propanol",
+    "formula": "C3H8O",
+    "cas": "71-23-8",
+    "grupo": "Alcohol",
+    "espectroImagen": "data/espectros/1-propanol-sdbs-1212.png",
+    "enlace": "O-H y C-O",
+    "banda": "O-H: 3200-3600 cm-1; C-O: 1000-1100 cm-1",
+    "descripcion": "Alcohol primario de tres carbonos."
+  },
+  {
+    "id": 9,
+    "nombre": "2-Propanol",
+    "formula": "C3H8O",
+    "cas": "67-63-0",
+    "grupo": "Alcohol",
+    "espectroImagen": "data/espectros/2-propanol-sdbs-2149.png",
+    "enlace": "O-H y C-O",
+    "banda": "O-H: 3200-3600 cm-1; C-O: 1050-1150 cm-1",
+    "descripcion": "Alcohol secundario también conocido como isopropanol."
+  },
+  {
+    "id": 10,
+    "nombre": "1-Butanol",
+    "formula": "C4H10O",
+    "cas": "71-36-3",
+    "grupo": "Alcohol",
+    "espectroImagen": "data/espectros/1-butanol-sdbs-1374.png",
+    "enlace": "O-H y C-O",
+    "banda": "O-H: 3200-3600 cm-1; C-O: 1000-1100 cm-1",
+    "descripcion": "Alcohol primario de cadena lineal con cuatro carbonos."
+  },
+  {
+    "id": 11,
+    "nombre": "2-Butanol",
+    "formula": "C4H10O",
+    "cas": "78-92-2",
+    "grupo": "Alcohol",
+    "espectroImagen": "data/espectros/2-butanol-sdbs-507.png",
+    "enlace": "O-H y C-O",
+    "banda": "O-H: 3200-3600 cm-1; C-O: 1050-1150 cm-1",
+    "descripcion": "Alcohol secundario con cuatro carbonos."
+  },
+  {
+    "id": 12,
+    "nombre": "2-Metil-2-propanol",
+    "formula": "C4H10O",
+    "cas": "75-65-0",
+    "grupo": "Alcohol",
+    "espectroImagen": "data/espectros/2-metil-2-propanol-sdbs-506.png",
+    "enlace": "O-H y C-O",
+    "banda": "O-H: 3200-3600 cm-1; C-O: 1100-1200 cm-1",
+    "descripcion": "Alcohol terciario conocido como tert-butanol."
+  },
+  {
+    "id": 13,
+    "nombre": "1-Pentanol",
+    "formula": "C5H12O",
+    "cas": "71-41-0",
+    "grupo": "Alcohol",
+    "espectroImagen": "data/espectros/1-pentanol-sdbs-4321.png",
+    "enlace": "O-H y C-O",
+    "banda": "O-H: 3200-3600 cm-1; C-O: 1000-1100 cm-1",
+    "descripcion": "Alcohol primario de cadena lineal con cinco carbonos."
+  },
+  {
+    "id": 14,
+    "nombre": "2-Pentanol",
+    "formula": "C5H12O",
+    "cas": "6032-29-7",
+    "grupo": "Alcohol",
+    "espectroImagen": "data/espectros/2-pentanol-sdbs-1708.png",
+    "enlace": "O-H y C-O",
+    "banda": "O-H: 3200-3600 cm-1; C-O: 1050-1150 cm-1",
+    "descripcion": "Alcohol secundario de cinco carbonos."
+  },
+  {
+    "id": 15,
+    "nombre": "3-Pentanol",
+    "formula": "C5H12O",
+    "cas": "584-02-1",
+    "grupo": "Alcohol",
+    "espectroImagen": "data/espectros/3-pentanol-sdbs-10170.png",
+    "enlace": "O-H y C-O",
+    "banda": "O-H: 3200-3600 cm-1; C-O: 1050-1150 cm-1",
+    "descripcion": "Alcohol secundario con el grupo OH en el carbono central."
+  },
+  {
+    "id": 16,
+    "nombre": "1-Hexanol",
+    "formula": "C6H14O",
+    "cas": "111-27-3",
+    "grupo": "Alcohol",
+    "espectroImagen": "data/espectros/1-hexanol-sdbs-19553.png",
+    "enlace": "O-H y C-O",
+    "banda": "O-H: 3200-3600 cm-1; C-O: 1000-1100 cm-1",
+    "descripcion": "Alcohol primario de cadena lineal con seis carbonos."
+  },
+  {
+    "id": 17,
+    "nombre": "1-Heptanol",
+    "formula": "C7H16O",
+    "cas": "111-70-6",
+    "grupo": "Alcohol",
+    "enlace": "O-H y C-O",
+    "banda": "O-H: 3200-3600 cm-1; C-O: 1000-1100 cm-1",
+    "descripcion": "Alcohol primario de cadena lineal con siete carbonos."
+  },
+  {
+    "id": 18,
+    "nombre": "1-Octanol",
+    "formula": "C8H18O",
+    "cas": "111-87-5",
+    "grupo": "Alcohol",
+    "espectroImagen": "data/espectros/1-octanol-sdbs-1938.png",
+    "enlace": "O-H y C-O",
+    "banda": "O-H: 3200-3600 cm-1; C-O: 1000-1100 cm-1",
+    "descripcion": "Alcohol primario de cadena lineal con ocho carbonos."
+  },
+  {
+    "id": 19,
+    "nombre": "Etilenglicol",
+    "formula": "C2H6O2",
+    "cas": "107-21-1",
+    "grupo": "Alcohol",
+    "enlace": "Dos grupos O-H y enlaces C-O",
+    "banda": "O-H: 3200-3600 cm-1; C-O: 1000-1150 cm-1",
+    "descripcion": "Diol con dos grupos hidroxilo."
+  },
+  {
+    "id": 20,
+    "nombre": "Propilenglicol",
+    "formula": "C3H8O2",
+    "cas": "57-55-6",
+    "grupo": "Alcohol",
+    "enlace": "Dos grupos O-H y enlaces C-O",
+    "banda": "O-H: 3200-3600 cm-1; C-O: 1000-1150 cm-1",
+    "descripcion": "Diol de tres carbonos con dos grupos hidroxilo."
+  },
+  {
+    "id": 21,
+    "nombre": "Glicerol",
+    "formula": "C3H8O3",
+    "cas": "56-81-5",
+    "grupo": "Alcohol",
+    "enlace": "Tres grupos O-H y enlaces C-O",
+    "banda": "O-H: 3200-3600 cm-1; C-O: 1000-1150 cm-1",
+    "descripcion": "Triol con tres grupos hidroxilo y bandas O-H intensas y anchas."
+  },
+  {
+    "id": 22,
+    "nombre": "Ciclohexanol",
+    "formula": "C6H12O",
+    "cas": "108-93-0",
+    "grupo": "Alcohol",
+    "enlace": "O-H y C-O",
+    "banda": "O-H: 3200-3600 cm-1; C-O: 1000-1150 cm-1",
+    "descripcion": "Alcohol secundario unido a un anillo de seis carbonos."
+  },
+  {
+    "id": 23,
+    "nombre": "Alcohol bencílico",
+    "formula": "C7H8O",
+    "cas": "100-51-6",
+    "grupo": "Alcohol",
+    "enlace": "O-H y C-O",
+    "banda": "O-H: 3200-3600 cm-1; C-O: 1000-1100 cm-1",
+    "descripcion": "Alcohol primario con un grupo bencilo; contiene un anillo aromático."
+  },
+  {
+    "id": 24,
+    "nombre": "Alcohol alílico",
+    "formula": "C3H6O",
+    "cas": "107-18-6",
+    "grupo": "Alcohol",
+    "enlace": "O-H, C-O y C=C",
+    "banda": "O-H: 3200-3600 cm-1; C-O: 1000-1100 cm-1",
+    "descripcion": "Alcohol insaturado que también presenta un doble enlace carbono-carbono."
+  },
+  {
+    "id": 25,
+    "nombre": "2-Feniletanol",
+    "formula": "C8H10O",
+    "cas": "60-12-8",
+    "grupo": "Alcohol",
+    "enlace": "O-H y C-O",
+    "banda": "O-H: 3200-3600 cm-1; C-O: 1000-1100 cm-1",
+    "descripcion": "Alcohol primario con un anillo aromático separado del OH por dos carbonos."
+  }
+
+]
